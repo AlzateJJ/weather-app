@@ -1,0 +1,15 @@
+.errorMsj {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin: 2em;
+
+    .errorMsj__item {
+        background-color: #eee7;
+        color: rgb(128, 36, 0);
+        padding: 1em 2em;
+        border-radius: 0.4em;
+        margin: 0 1em;
+    }
+    
+}

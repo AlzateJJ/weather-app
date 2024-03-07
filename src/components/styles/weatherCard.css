@@ -1,0 +1,105 @@
+.weather {
+    width: 70%;
+    max-width: 400px;
+    background-color: #eee7;
+    padding: 1.5em 1.5em 2em;
+    border-radius: 0.9em;
+    box-shadow: 0.8em 0.8em 1em #aaa4;
+    font-size: 0.9rem;
+    max-height: 95vh;
+    /* position: fixed;
+    top: 0; */
+    margin: 1em auto;
+
+    .weather__title {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 0.3rem;
+    }
+
+    .weather__country {
+        font-size: 0.9em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .weather__body {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+
+        .weather__img {
+            .weather__icon {
+                width: 60%;
+                margin: 0 auto;
+                grid-column: 1 / 2;
+            }
+        }
+    
+        .weather__condition {
+            grid-column: 2 / 3;
+
+            .weather__description {
+                text-align: center;
+                font-size: 1.1em;
+                font-weight: 730;
+                text-transform: capitalize;
+                margin-bottom: 1em;
+            }
+    
+            .weather__list {
+                display: grid; 
+                gap: 0.7em;
+
+                .weather__list-item {
+                    display: grid;
+                    grid-template-columns: 2fr 3fr;
+                    font-size: 1em;
+                    
+                    .weather__label {
+                        font-weight: 500;
+                        width: 4em;
+                        margin: 0 0.5em;
+                    }
+
+                    .weather__value {
+                        font-weight: 600;
+                        width: 4em;
+                        margin: 0 0.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    .weather__temp {
+        text-align: center;
+        font-size: 1.2em;
+        margin: 1em;
+    }
+
+    .weather__footer {
+        display: flex;
+        justify-content: center;
+
+        .weather__btn {
+            border: none;
+            font-size: 1.1em;
+            padding: 0.4em 1.2em;
+            border-radius: 0.5em;
+            font-weight: 650;
+            background-color: rgb(207, 111, 20);
+            color: black;
+
+            &:hover {
+                background-color: rgb(206, 139, 16);
+                font-weight: 750;
+                box-shadow: 0 0 1em #0004;
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
